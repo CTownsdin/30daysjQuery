@@ -1,1 +1,3 @@
 # 30daysjQuery
+
+a place to store some interesting bits of jQuery I'm playing with...
