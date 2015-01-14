@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Control w Animate</title>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <style>
+    .box {
+      width: 400px;
+      background: red;
+      padding: 2em;
+      position: relative;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Some Content Here</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora beatae ea non, mollitia vitae magnam at, quaerat hic placeat laudantium atque, optio. Harum, mollitia consequatur. Nostrum officia vel hic, rerum optio et debitis esse vero magni, praesentium numquam autem nesciunt aspernatur? Excepturi illo, porro molestiae commodi eos nulla aspernatur, iste amet iure magni voluptates unde quibusdam reiciendis rerum, pariatur omnis!
+  </p>
+</div>
+
+<p><button class="increase">Increase</button></p>
+
+<script>
+
+(function() {
+
+  var box = $('div.box');
+
+  $('button.increase').on('click', function() {
+    box.animate({
+      'fontSize': '+=5',
+      'width': '+=300'
+    });
+  });
+})();
+
+</script>
+
+</body>
+</html>

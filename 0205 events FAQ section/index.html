@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery FAQs</title>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>FAQs</h1>
+
+  <dl>
+    <dt>Who's yur daddy?</dt>
+    <dd>mememe</dd>
+    <dt>SunnyDay?</dt>
+    <dd>Not likely</dd>
+    <dt>Opt or Pess</dt>
+    <dd>Opt duh!</dd>
+    <dt>GoKart?</dt>
+    <dd>Yes Please! :)</dd>
+  </dl>
+
+  <script type="text/javascript">
+  (function() {
+
+    $('dd').filter(':nth-child(n+4)').addClass('hide');
+
+    $('dl').on('mouseenter', 'dt', function() {
+      $(this).next()
+                .slideDown(200)
+                .siblings('dd').slideUp(200);
+    });
+
+  })();
+  </script>
+
+</body>
+</html>
